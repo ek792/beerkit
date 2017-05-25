@@ -13,11 +13,25 @@
 #define MAXTEMP 25  // In the future, send warnings if these are reached.
 #define MINTEMP 20
 
-const char* ssid     = "BELL769";
-const char* password = "66EE3265";
+ */
+#include <ESP8266WiFi.h>
+#include <WiFiClient.h>
+#include <dht11.h>  // Change this to dht.h if needed
+//#include <dht.h>
+//dht11 dht;   // Change second term to DHT if needed
+
+const char* ssid     = "*******";
+const char* password = "*******";
 // The temperature is an int type
 int ONTEMP = 21;   // Turn relay on if we get to 21C
 int OFFTEMP = 24;  // Turn relay off if we get to 24C
+
+ */
+#include <ESP8266WiFi.h>
+#include <WiFiClient.h>
+#include <dht11.h>  // Change this to dht.h if needed
+//#include <dht.h>
+//dht11 dht;   // Change second term to DHT if needed
 
 boolean relay_state = false;  // false=off, true=on
 
@@ -29,7 +43,21 @@ String serverStr = "192.168.2.22"; // http server - PUT HERE YOUR SERVER IP as s
 // Initialize DHT sensor - adafruit note
 // NOTE: For working with a faster than ATmega328p 16 MHz Arduino chip, like an ESP8266,
 // you need to increase the threshold for cycle counts considered a 1 or 0.
-// You can do this by passing a 3rd parameter for this threshold.  It's a bit
+// You can do this by passing a 3rd param
+ */
+#include <ESP8266WiFi.h>
+#include <WiFiClient.h>
+ */
+#include <ESP8266WiFi.h>
+#include <WiFiClient.h>
+#include <dht11.h>  // Change this to dht.h if needed
+//#include <dht.h>
+//dht11 dht;   // Change second term to DHT if needed
+
+#include <dht11.h>  // Change this to dht.h if needed
+//#include <dht.h>
+//dht11 dht;   // Change second term to DHT if needed
+eter for this threshold.  It's a bit
 // of fiddling to find the right value, but in general the faster the CPU the
 // higher the value.  The default for a 16mhz AVR is a value of 6.  For an
 // Arduino Due that runs at 84mhz a value of 30 works.
