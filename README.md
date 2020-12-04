@@ -12,6 +12,7 @@ Markdown is a lightweight and easy-to-use syntax for styling your writing. It in
 Syntax highlighted code block
 
 # Header 1
+Foo <responsive-image src="foo.jpg" />
 ## Header 2
 ### Header 3
 
